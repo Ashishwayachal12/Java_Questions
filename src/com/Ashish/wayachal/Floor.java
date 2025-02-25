@@ -1,19 +1,17 @@
 package com.Ashish.wayachal;
 
-public class CeilingofaNumber {
+public class Floor {
     public static void main(String[] args) {
+
         int[]arr={2,4,3,5,9,14,16,18};
-        int target=15;
+        int target=1;
         int ans=BinarySearch(arr,target);
         System.out.println(ans);
 
     }
     static int BinarySearch(int[]arr,int target)
     {
-        if(target>= arr[arr.length-1])
-        {
-            return -1;
-        }
+
         int start=0;
         int end=arr.length;
 
@@ -33,6 +31,6 @@ public class CeilingofaNumber {
             }
 
         }
-        return start;
+        return end;
     }
 }
